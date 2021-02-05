@@ -6,6 +6,8 @@
     "eslint-config-typescript"
   ],
   "scripts": {
-    "patch": "yarn workspaces run version:patch"
+    "patch": "yarn workspaces run version:patch",
+    "minor": "yarn workspaces run version:minor",
+    "major": "yarn workspaces run version:major"
   }
 }
