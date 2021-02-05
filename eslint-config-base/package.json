@@ -1,9 +1,11 @@
 {
   "name": "@macpaw/eslint-config-base",
-  "version": "0.0.1",
+  "version": "0.0.2-0",
   "main": "index.js",
   "scripts": {
-
+    "version:patch": "yarn version --prepatch",
+    "version:minor": "yarn version --preminor",
+    "version:major": "yarn version --premajor"
   },
   "peerDependencies": {
     "eslint": "^7.0.0",
