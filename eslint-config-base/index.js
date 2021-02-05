@@ -54,7 +54,7 @@ module.exports = {
     'no-var': 2,
     'prefer-const': 2,
     'arrow-body-style': 2,
-    'arrow-parens': [2, 'as-needed', { 'requireForBlockBody': true }],
+    'arrow-parens': [2, 'always'],
     'arrow-spacing': 2,
     'generator-star-spacing': 2,
     'no-confusing-arrow': 2,
@@ -121,6 +121,7 @@ module.exports = {
     'space-infix-ops': 2,
     'space-unary-ops': 2,
     'switch-colon-spacing': 2,
+    'max-len': [1, { code: 120 }],
 
     // import
     'import/no-unresolved': [2, { commonjs: true, caseSensitive: true }],
