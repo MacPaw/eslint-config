@@ -1,0 +1,23 @@
+{
+  "name": "@macpaw/eslint-config-base",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+
+  },
+  "peerDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-plugin-import": "^2.22.0"
+  },
+  "devDependencies": {
+    "eslint": "7.0.0",
+    "eslint-plugin-import": "2.22.1"
+  },
+  "files": [
+    "index.js"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "license": "MIT"
+}

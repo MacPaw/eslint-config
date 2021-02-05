@@ -1,0 +1,25 @@
+{
+  "name": "@macpaw/eslint-config-react",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+
+  },
+  "peerDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "7.0.0",
+    "eslint-plugin-react": "7.22.0",
+    "eslint-plugin-react-hooks": "4.2.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "license": "MIT"
+}
