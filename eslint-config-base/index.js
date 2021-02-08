@@ -103,7 +103,6 @@ module.exports = {
     'implicit-arrow-linebreak': 2,
     'key-spacing': 2,
     'keyword-spacing': 2,
-    'new-cap': 2,
     'new-parens': 2,
     'newline-before-return': 2,
     'no-array-constructor': 2,
@@ -135,7 +134,6 @@ module.exports = {
     ],
 
     // import
-    'import/no-unresolved': 0,
     'import/named': 2,
     'import/default': 0,
     'import/namespace': 0,
