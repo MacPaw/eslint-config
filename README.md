@@ -1,12 +1,12 @@
-#### [@macpaw/eslint-config-base](eslint-config-base/index.js)
+### [@macpaw/eslint-config-base](eslint-config-base/index.js)
 
 `yarn add --dev @macpaw/eslint-config-base eslint eslint-plugin-import`
 
-#### [@macpaw/eslint-config-react](eslint-config-react/index.js)
+### [@macpaw/eslint-config-react](eslint-config-react/index.js)
 
 `yarn add --dev @macpaw/eslint-config-react eslint eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks`
 
-#### [@macpaw/eslint-config-typescript](eslint-config-typescript/index.js)
+### [@macpaw/eslint-config-typescript](eslint-config-typescript/index.js)
 
 `yarn add --dev @macpaw/eslint-config-typescript eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser`
 
