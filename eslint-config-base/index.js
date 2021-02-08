@@ -121,7 +121,17 @@ module.exports = {
     'space-infix-ops': 2,
     'space-unary-ops': 2,
     'switch-colon-spacing': 2,
-    'max-len': [1, { code: 120 }],
+    'max-len': [
+      1,
+      {
+        'code': 120,
+        'ignoreComments': true,
+        'ignoreUrls': true,
+        'ignoreStrings': true,
+        'ignoreTemplateLiterals': true,
+        'ignoreRegExpLiterals': true
+      }
+    ],
 
     // import
     'import/no-unresolved': [2, { commonjs: true, caseSensitive: true }],
