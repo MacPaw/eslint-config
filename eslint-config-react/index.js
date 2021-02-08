@@ -15,6 +15,7 @@ module.exports = {
   rules: {
     'jsx-quotes': ['error', 'prefer-double'],
     'react/prop-types': 0,
+    'react/display-name': 0,
     'react/jsx-max-props-per-line': ['error', { 'maximum': 1, 'when': 'multiline' }],
     'react/jsx-first-prop-new-line': ['error', 'multiline-multiprop'],
     'react/jsx-closing-tag-location': 'error',

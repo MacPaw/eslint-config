@@ -135,7 +135,7 @@ module.exports = {
     ],
 
     // import
-    'import/no-unresolved': [2, { commonjs: true, caseSensitive: true }],
+    'import/no-unresolved': 0,
     'import/named': 2,
     'import/default': 0,
     'import/namespace': 0,
@@ -150,7 +150,7 @@ module.exports = {
       groups: ['builtin', 'external', 'parent', 'sibling', 'index'],
       pathGroups: [
         {
-          pattern: '*.+(scss|sass|css|png|svg)',
+          pattern: '*.+(png|svg|scss|sass|css)',
           group: 'sibling',
           patternOptions: { matchBase: true }, // options: https://github.com/isaacs/minimatch
           position: 'after',
@@ -179,7 +179,7 @@ module.exports = {
     'import/no-default-export': 0,
     'import/no-named-export': 0,
     'import/no-self-import': 1,
-    'import/no-cycle': ['error', { maxDepth: '∞' }],
+    'import/no-cycle': 0,
     'import/no-relative-parent-imports': 0,
   }
 };
