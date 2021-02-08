@@ -1,18 +1,12 @@
-#### [Base javascript config](eslint-config-base/index.js)
-
-extends defaults from `eslint:recommended`
+#### [@macpaw/eslint-config-base](eslint-config-base/index.js)
 
 `yarn add --dev @macpaw/eslint-config-base eslint eslint-plugin-import`
 
-#### [React config](eslint-config-react/index.js)
-
-extends defaults from `plugin:jsx-a11y/recommended`, `plugin:react/recommended`, `plugin:react-hooks/recommended`
+#### [@macpaw/eslint-config-react](eslint-config-react/index.js)
 
 `yarn add --dev @macpaw/eslint-config-react eslint eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks`
 
-#### [Typescript config](eslint-config-typescript/index.js)
-
-extends defaults from `plugin:@typescript-eslint/recommended`
+#### [@macpaw/eslint-config-typescript](eslint-config-typescript/index.js)
 
 `yarn add --dev @macpaw/eslint-config-typescript eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser`
 
