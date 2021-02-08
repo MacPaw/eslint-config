@@ -1,6 +1,6 @@
 {
   "name": "@macpaw/eslint-config-typescript",
-  "version": "0.0.8",
+  "version": "0.0.10",
   "main": "index.js",
   "scripts": {
     "version:patch": "yarn version --patch --no-git-tag-version",
