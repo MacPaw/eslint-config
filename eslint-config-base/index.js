@@ -113,7 +113,7 @@ module.exports = {
     'no-trailing-spaces': 2,
     'no-unneeded-ternary': 2,
     'object-curly-spacing': [2, 'always'],
-    'operator-linebreak': [2, 'after'],
+    'operator-linebreak': [2, 'before'],
     'semi-spacing': 2,
     'space-before-blocks': 2,
     'space-before-function-paren': [2, { 'anonymous': 'always', 'named': 'never' }],
