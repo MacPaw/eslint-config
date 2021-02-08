@@ -14,6 +14,7 @@ module.exports = {
   },
   rules: {
     'jsx-quotes': ['error', 'prefer-double'],
+    'jsx-a11y/no-autofocus': 0,
     'react/prop-types': 0,
     'react/display-name': 0,
     'react/jsx-max-props-per-line': ['error', { 'maximum': 1, 'when': 'multiline' }],

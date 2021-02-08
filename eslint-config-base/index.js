@@ -150,9 +150,15 @@ module.exports = {
       groups: ['builtin', 'external', 'parent', 'sibling', 'index'],
       pathGroups: [
         {
-          pattern: '*.+(png|svg|scss|sass|css)',
+          pattern: '*.+(png|svg)',
           group: 'sibling',
-          patternOptions: { matchBase: true }, // options: https://github.com/isaacs/minimatch
+          patternOptions: { matchBase: true },
+          position: 'after',
+        },
+        {
+          pattern: '*.+(scss|sass|css)',
+          group: 'sibling',
+          patternOptions: { matchBase: true },
           position: 'after',
         },
       ],
