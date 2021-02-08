@@ -1,6 +1,6 @@
 {
   "name": "@macpaw/eslint-config-react",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "index.js",
   "scripts": {
     "version:patch": "yarn version --patch --no-git-tag-version",

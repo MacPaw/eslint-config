@@ -105,6 +105,7 @@ module.exports = {
     'keyword-spacing': 2,
     'new-cap': 2,
     'new-parens': 2,
+    'newline-before-return': 2,
     'no-array-constructor': 2,
     'no-empty': 2,
     'no-lonely-if': 2,
