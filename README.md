@@ -4,11 +4,11 @@
 
 ### [@macpaw/eslint-config-react](eslint-config-react/index.js)
 
-`yarn add --dev @macpaw/eslint-config-react eslint eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks`
+`yarn add --dev @macpaw/eslint-config-react eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks`
 
 ### [@macpaw/eslint-config-typescript](eslint-config-typescript/index.js)
 
-`yarn add --dev @macpaw/eslint-config-typescript eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser`
+`yarn add --dev @macpaw/eslint-config-typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser`
 
 ## Usage
 
@@ -17,9 +17,9 @@ Extend necessary configs inside `.eslintrc.json`:
 ```
 {
   "extends": [
-    "@macpaw/eslint-config-base",
-    "@macpaw/eslint-config-react",
-    "@macpaw/eslint-config-typescript"
+    "@macpaw/eslint-config-base", // required
+    "@macpaw/eslint-config-react", // optional
+    "@macpaw/eslint-config-typescript" // optional
   ]
 }
 ```
