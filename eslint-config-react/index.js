@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    'eslint-plugin-jsx-a11y',
+    'plugin:jsx-a11y/recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
   ],
