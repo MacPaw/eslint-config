@@ -87,9 +87,9 @@ module.exports = {
     'no-process-exit': 2,
 
     // stylistic issues
-    'indent': [2, 2, { 'flatTernaryExpressions': true }],
+    'indent': [2, 2, { 'flatTernaryExpressions': true, 'SwitchCase': 1 }],
     'linebreak-style': [2, 'unix'],
-    'quotes': [2, 'single'],
+    'quotes': [2, 'single', { 'avoidEscape': true }],
     'semi': [2, 'always'],
     'array-bracket-spacing': 2,
     'block-spacing': 2,
@@ -147,11 +147,11 @@ module.exports = {
     'import/first': 2,
     'import/no-duplicates': 2,
     'import/order': [2, {
-      groups: [['builtin', 'external', 'internal']],
+      groups: ['builtin', 'external', 'parent', 'sibling', 'index'],
       pathGroups: [
         {
-          pattern: '*.+(scss|sass|css)',
-          group: 'internal',
+          pattern: '*.+(scss|sass|css|png|svg)',
+          group: 'sibling',
           patternOptions: { matchBase: true }, // options: https://github.com/isaacs/minimatch
           position: 'after',
         },
