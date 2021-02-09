@@ -53,7 +53,6 @@ module.exports = {
     // ES
     'no-var': 2,
     'prefer-const': 2,
-    'arrow-body-style': 2,
     'arrow-parens': [2, 'always'],
     'arrow-spacing': 2,
     'generator-star-spacing': 2,
