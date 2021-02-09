@@ -17,6 +17,16 @@ module.exports = {
     '@typescript-eslint/no-empty-interface': 0,
     '@typescript-eslint/no-empty-function': 0,
     '@typescript-eslint/no-explicit-any': 0,
+    '@typescript-eslint/member-delimiter-style': {
+      'multiline': {
+        'delimiter': 'semi',
+        'requireLast': true
+      },
+      'singleline': {
+        'delimiter': 'semi',
+        'requireLast': false
+      }
+    },
     // https://github.com/typescript-eslint/typescript-eslint/issues/2540#issuecomment-692866111
     'import/no-unresolved': 0,
     'no-use-before-define': 0,
