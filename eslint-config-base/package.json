@@ -1,6 +1,6 @@
 {
   "name": "@macpaw/eslint-config-base",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "main": "index.js",
   "scripts": {
     "version:patch": "yarn version --patch --no-git-tag-version",
