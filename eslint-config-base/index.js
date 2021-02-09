@@ -46,7 +46,7 @@ module.exports = {
     'no-useless-concat': 2,
     'no-useless-return': 2,
     'no-with': 2,
-    'prefer-promise-reject-errors': 2,
+    'prefer-promise-reject-errors': [2, { allowEmptyReject: true }],
     'yoda': 2,
     'require-atomic-updates': 2,
 
