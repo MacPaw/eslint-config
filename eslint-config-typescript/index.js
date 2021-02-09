@@ -14,11 +14,6 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': 0,
     '@typescript-eslint/no-non-null-assertion': 0,
     '@typescript-eslint/no-use-before-define': ['error', { 'functions': false }],
-    '@typescript-eslint/member-delimiter-style': ['error', {
-      'multiline': {
-        'delimiter': 'none'
-      }
-    }],
     '@typescript-eslint/no-empty-interface': 0,
     '@typescript-eslint/no-empty-function': 0,
     '@typescript-eslint/no-explicit-any': 0,
