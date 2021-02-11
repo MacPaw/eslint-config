@@ -62,7 +62,6 @@ module.exports = {
     'no-useless-constructor': 2,
     'no-useless-rename': 2,
     'object-shorthand': 2,
-    'prefer-arrow-callback': 2,
     'prefer-numeric-literals': 2,
     'prefer-rest-params': 2,
     'prefer-spread': 2,
