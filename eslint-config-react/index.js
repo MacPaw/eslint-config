@@ -19,6 +19,7 @@ module.exports = {
     'react/display-name': 0,
     'react/jsx-max-props-per-line': ['error', { 'maximum': 1, 'when': 'multiline' }],
     'react/jsx-first-prop-new-line': ['error', 'multiline-multiprop'],
+    "react/jsx-closing-bracket-location": 2,
     'react/jsx-closing-tag-location': 'error',
     'react/jsx-curly-newline': ['error', {
       'multiline': 'consistent',

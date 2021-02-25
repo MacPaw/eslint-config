@@ -85,6 +85,7 @@ module.exports = {
     'no-process-exit': 2,
 
     // stylistic issues
+    'curly': [2, 'multi-line', 'consistent'],
     'indent': [2, 2, { flatTernaryExpressions: true, SwitchCase: 1 }],
     'linebreak-style': [2, 'unix'],
     'quotes': [2, 'single', { avoidEscape: true }],
