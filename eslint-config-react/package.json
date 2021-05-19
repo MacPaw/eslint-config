@@ -1,6 +1,6 @@
 {
   "name": "@macpaw/eslint-config-react",
-  "version": "0.0.21",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "version:patch": "yarn version --patch --no-git-tag-version",
@@ -22,9 +22,6 @@
   "files": [
     "index.js"
   ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "eslintConfig": {},
   "repository": {
     "type": "git",
