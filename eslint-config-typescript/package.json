@@ -1,20 +1,15 @@
 {
   "name": "@macpaw/eslint-config-typescript",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "main": "index.js",
   "scripts": {
     "version:patch": "yarn version --patch --no-git-tag-version",
     "version:minor": "yarn version --minor --no-git-tag-version",
     "version:major": "yarn version --major --no-git-tag-version"
   },
-  "peerDependencies": {
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.14.0",
     "@typescript-eslint/parser": "^4.14.0",
-    "eslint": "^7.0.0"
-  },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "4.14.2",
-    "@typescript-eslint/parser": "4.14.2",
     "eslint": "^7.0.0"
   },
   "files": [

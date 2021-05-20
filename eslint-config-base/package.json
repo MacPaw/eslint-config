@@ -1,19 +1,15 @@
 {
   "name": "@macpaw/eslint-config-base",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "main": "index.js",
   "scripts": {
     "version:patch": "yarn version --patch --no-git-tag-version",
     "version:minor": "yarn version --minor --no-git-tag-version",
     "version:major": "yarn version --major --no-git-tag-version"
   },
-  "peerDependencies": {
+  "dependencies": {
     "eslint": "^7.0.0",
     "eslint-plugin-import": "^2.22.0"
-  },
-  "devDependencies": {
-    "eslint": "7.0.0",
-    "eslint-plugin-import": "2.22.1"
   },
   "files": [
     "index.js"

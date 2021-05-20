@@ -1,23 +1,17 @@
 {
   "name": "@macpaw/eslint-config-react",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "main": "index.js",
   "scripts": {
     "version:patch": "yarn version --patch --no-git-tag-version",
     "version:minor": "yarn version --minor --no-git-tag-version",
     "version:major": "yarn version --major --no-git-tag-version"
   },
-  "peerDependencies": {
+  "dependencies": {
     "eslint": "^7.0.0",
     "eslint-plugin-jsx-a11y": "^6.4.0",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0"
-  },
-  "devDependencies": {
-    "eslint": "^7.0.0",
-    "eslint-plugin-jsx-a11y": "6.4.1",
-    "eslint-plugin-react": "7.22.0",
-    "eslint-plugin-react-hooks": "4.2.0"
   },
   "files": [
     "index.js"
