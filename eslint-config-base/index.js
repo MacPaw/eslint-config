@@ -145,7 +145,7 @@ module.exports = {
     'import/first': 2,
     'import/no-duplicates': 2,
     'import/order': [2, {
-      groups: ['builtin', 'external', 'parent', 'sibling', 'index'],
+      groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
       pathGroups: [
         {
           pattern: '*.+(png|svg)',
