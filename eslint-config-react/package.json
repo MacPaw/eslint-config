@@ -16,7 +16,7 @@
     "eslint": "7.31.0"
   },
   "peerDependencies": {
-    "eslint": "*"
+    "eslint": "^6.0.0 || ^7.0.0"
   },
   "files": [
     "index.js"
