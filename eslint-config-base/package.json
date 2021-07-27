@@ -8,10 +8,10 @@
     "version:major": "yarn version --major --no-git-tag-version"
   },
   "dependencies": {
-    "eslint-plugin-import": "2.23.4"
+    "eslint-plugin-import": "^2.23.4"
   },
   "devDependencies": {
-    "eslint": "7.31.0"
+    "eslint": "^7.31.0"
   },
   "peerDependencies": {
     "eslint": "^6.0.0 || ^7.0.0"
