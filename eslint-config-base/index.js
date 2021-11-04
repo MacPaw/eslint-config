@@ -49,6 +49,13 @@ module.exports = {
     'prefer-promise-reject-errors': [2, { allowEmptyReject: true }],
     'yoda': 2,
     'require-atomic-updates': 2,
+    'comma-dangle': [2, {
+      'arrays': 'always-multiline',
+      'objects': 'always-multiline',
+      'imports': 'always-multiline',
+      'exports': 'always-multiline',
+      'functions': 'only-multiline',
+    }],
 
     // ES
     'no-var': 2,
