@@ -35,7 +35,6 @@ module.exports = {
     'no-new-wrappers': 2,
     'no-proto': 2,
     'no-return-assign': 2,
-    'no-return-await': 2,
     'no-self-compare': 2,
     'no-sequences': 2,
     'no-throw-literal': 2,
