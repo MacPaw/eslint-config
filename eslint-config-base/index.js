@@ -169,7 +169,6 @@ module.exports = {
       ],
     }],
     'import/newline-after-import': 2,
-    'import/prefer-default-export': 2,
     'import/no-restricted-paths': 0,
     'import/no-absolute-path': 2,
     'import/no-dynamic-require': 2,
