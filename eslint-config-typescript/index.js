@@ -30,5 +30,8 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/issues/2540#issuecomment-692866111
     'import/no-unresolved': 0,
     'no-use-before-define': 0,
+    // Must be off to make "@typescript-eslint/no-useless-constructor" rule work properly
+    "no-useless-constructor": "off",
+    "@typescript-eslint/no-useless-constructor": 2
   },
 };
