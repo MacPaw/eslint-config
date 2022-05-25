@@ -35,3 +35,4 @@ There is a way to test new version of eslint-config without publishing it to npm
 1. Execute `npm link` inside a necessary config project root.
 2. Execute `npm link @macpaw/eslint-config-${name}` inside related project's root.
 3. Rebuild related project if needed.
+4. When finish testing run `npm unlink @macpaw/eslint-config-${name}`
