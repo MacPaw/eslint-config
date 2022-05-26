@@ -8,7 +8,7 @@
     "version:major": "yarn version --major --no-git-tag-version"
   },
   "dependencies": {
-    "@macpaw/eslint-config-base": "2.0.0-alpha.2",
+    "@macpaw/eslint-config-base": "2.0.0-alpha.3",
     "@typescript-eslint/eslint-plugin": "^5.26.0",
     "@typescript-eslint/parser": "^5.26.0"
   },
