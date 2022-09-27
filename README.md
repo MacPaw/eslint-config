@@ -21,7 +21,7 @@ Extend necessary configs inside `.eslintrc.json`:
 ```
 {
   "extends": [
-    "@macpaw/eslint-config-base", // required
+    "@macpaw/eslint-config-base", // optional (required only when you do not use packages below)
     "@macpaw/eslint-config-react", // optional
     "@macpaw/eslint-config-typescript", // optional
     "@macpaw/eslint-config-prettier", // optional
