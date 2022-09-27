@@ -20,5 +20,7 @@ jobs:
           npm publish
           cd ../eslint-config-typescript
           npm publish
+          cd ../eslint-config-prettier
+          npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

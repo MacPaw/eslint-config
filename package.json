@@ -3,7 +3,8 @@
   "workspaces": [
     "eslint-config-base",
     "eslint-config-react",
-    "eslint-config-typescript"
+    "eslint-config-typescript",
+    "eslint-config-prettier"
   ],
   "scripts": {
     "patch": "yarn workspaces run version:patch",
