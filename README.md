@@ -10,6 +10,10 @@
 
 `yarn add --dev @macpaw/eslint-config-typescript`
 
+### [@macpaw/eslint-config-prettier](eslint-config-prettier/index.js)
+
+`yarn add --dev @macpaw/eslint-config-prettier`
+
 ## Usage
 
 Extend necessary configs inside `.eslintrc.json`:
@@ -19,7 +23,8 @@ Extend necessary configs inside `.eslintrc.json`:
   "extends": [
     "@macpaw/eslint-config-base", // required
     "@macpaw/eslint-config-react", // optional
-    "@macpaw/eslint-config-typescript" // optional
+    "@macpaw/eslint-config-typescript", // optional
+    "@macpaw/eslint-config-prettier", // optional
   ]
 }
 ```
