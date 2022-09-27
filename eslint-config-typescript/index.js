@@ -33,6 +33,9 @@ module.exports = {
     'no-use-before-define': 0,
     // Must be off to make "@typescript-eslint/no-useless-constructor" rule work properly
     "no-useless-constructor": "off",
-    "@typescript-eslint/no-useless-constructor": 2
+    "@typescript-eslint/no-useless-constructor": 2,
+    "no-unused-vars": 0,
+    "@typescript-eslint/no-unused-vars": 2,
+    "@typescript-eslint/no-shadow": 2,
   },
 };
