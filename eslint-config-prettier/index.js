@@ -1,6 +1,5 @@
 module.exports = {
   extends: [
-    '@macpaw/eslint-config-base',
     'prettier',
     'plugin:prettier/recommended'
   ],
