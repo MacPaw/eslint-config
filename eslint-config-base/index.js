@@ -122,12 +122,6 @@ module.exports = {
       property: 'isNaN',
       message: 'Please use Number.isNaN instead'
     }, {
-      property: '__defineGetter__',
-      message: 'Please use Object.defineProperty instead.'
-    }, {
-      property: '__defineSetter__',
-      message: 'Please use Object.defineProperty instead.'
-    }, {
       object: 'Math',
       property: 'pow',
       message: 'Use the exponentiation operator (**) instead.'
@@ -328,13 +322,8 @@ module.exports = {
     'spaced-comment': [2, 'always', {
       line: {
         exceptions: ['-', '+'],
-        markers: ['=', '!', '/'] // space here to support sprockets directives, slash for TS /// comments
+        markers: ['=', '!'] // space here to support sprockets directives
       },
-      block: {
-        exceptions: ['-', '+'],
-        markers: ['=', '!', ':', '::'], // space here to support sprockets directives and flow comment types
-        balanced: true
-      }
     }],
 
     // import
@@ -406,12 +395,6 @@ module.exports = {
         '**/webpack.config.*.js', // webpack config
         '**/rollup.config.js', // rollup config
         '**/rollup.config.*.js', // rollup config
-        '**/gulpfile.js', // gulp config
-        '**/gulpfile.*.js', // gulp config
-        '**/Gruntfile{,.js}', // grunt config
-        '**/protractor.conf.js', // protractor config
-        '**/protractor.conf.*.js', // protractor config
-        '**/karma.conf.js', // karma config
         '**/.eslintrc.js' // eslint config
       ],
       optionalDependencies: false
