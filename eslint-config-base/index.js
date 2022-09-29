@@ -122,10 +122,6 @@ module.exports = {
       object: 'window',
       property: 'isNaN',
       message: 'Please use Number.isNaN instead'
-    }, {
-      object: 'Math',
-      property: 'pow',
-      message: 'Use the exponentiation operator (**) instead.'
     }],
     'no-nested-ternary': 2,
     'no-plusplus': 2,
