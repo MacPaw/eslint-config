@@ -124,7 +124,7 @@ module.exports = {
       message: 'Please use Number.isNaN instead'
     }],
     'no-nested-ternary': 2,
-    'no-plusplus': 2,
+    'no-plusplus': [2, { allowForLoopAfterthoughts: true }],
     'no-undefined': 2,
     'no-unused-vars': 2,
     'no-unreachable': 2,
