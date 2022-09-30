@@ -13,6 +13,7 @@ jobs:
         with:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
+        # TODO: remove --access public before next release
       - run: |
           cd eslint-config-base
           npm publish
@@ -21,6 +22,6 @@ jobs:
           cd ../eslint-config-typescript
           npm publish
           cd ../eslint-config-prettier
-          npm publish
+          npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
