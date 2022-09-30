@@ -318,8 +318,8 @@ module.exports = {
     'quote-props': [2, 'as-needed', { keywords: false, unnecessary: true, numbers: false }],
     'spaced-comment': [2, 'always', {
       line: {
-        exceptions: ['-', '+'],
-        markers: ['=', '!'] // space here to support sprockets directives
+        exceptions: ['-', '+', '/'],
+        markers: ['=', '!', '/'] // space here to support sprockets directives
       },
     }],
 
