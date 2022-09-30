@@ -20,7 +20,7 @@ module.exports = {
     'react/display-name': 0,
     'react/jsx-max-props-per-line': ['error', { 'maximum': 1, 'when': 'multiline' }],
     'react/jsx-first-prop-new-line': ['error', 'multiline-multiprop'],
-    "react/jsx-closing-bracket-location": 2,
+    'react/jsx-closing-bracket-location': 2,
     'react/jsx-closing-tag-location': 'error',
     'react/jsx-curly-newline': ['error', {
       'multiline': 'consistent',
@@ -32,5 +32,8 @@ module.exports = {
       'afterOpening': 'never',
       'beforeClosing': 'never',
     }],
+    'react/jsx-curly-brace-presence': 2,
+    'react/jsx-boolean-value': 2,
+    'react/jsx-closing-bracket-location': 2,
   },
 };
