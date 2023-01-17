@@ -1,6 +1,6 @@
 {
   "name": "@macpaw/eslint-config-prettier",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "scripts": {
     "version:patch": "yarn version --patch --no-git-tag-version",
