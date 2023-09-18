@@ -1,12 +1,8 @@
 {
   "name": "@macpaw/eslint-config-base",
+  "private": false,
   "version": "3.1.0",
   "main": "index.js",
-  "scripts": {
-    "version:patch": "yarn version --patch --no-git-tag-version",
-    "version:minor": "yarn version --minor --no-git-tag-version",
-    "version:major": "yarn version --major --no-git-tag-version"
-  },
   "dependencies": {
     "eslint-plugin-import": "^2.26.0"
   },
@@ -24,5 +20,8 @@
     "type": "git",
     "url": "https://github.com/MacPaw/eslint-config.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }
