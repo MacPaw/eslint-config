@@ -1,0 +1,79 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - release
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    continue-on-error: false
+    outputs:
+      releaseReady: ${{ steps.releaseOutputs.outputs.releaseReady }}
+    steps:
+      - name: Cancel previous jobs
+        uses: styfle/cancel-workflow-action@0.11.0
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Prepare node
+        uses: ./.github/actions/prepare-node
+        id: prepare-node
+        with:
+          node-version: 18
+          registry-url: 'https://registry.npmjs.org/'
+          package-manager: 'pnpm'
+          scope: '@macpaw'
+
+      - name: Create Release or publish to NPM Registry
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          publish: pnpm changes:release
+          title: 'ci(changesets): :package: version update for packages'
+          commit: 'ci(changesets):chore(release): version update for packages'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Generate outputs
+        id: releaseOutputs
+        if: steps.changesets.outputs.published == 'true'
+        run: echo "releaseReady=true" >> $GITHUB_OUTPUT
+
+  publish-github:
+    name: Publish to Github Registry
+    needs: release
+    runs-on: ubuntu-latest
+    continue-on-error: false
+    if: needs.release.outputs.releaseReady == 'true'
+    steps:
+      - name: Cancel previous jobs
+        uses: styfle/cancel-workflow-action@0.11.0
+      
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Prepare node
+        uses: ./.github/actions/prepare-node
+        id: prepare-node
+        with:
+          node-version: 18
+          registry-url: https://npm.pkg.github.com/
+          package-manager: 'pnpm'
+          scope: '@macpaw'
+
+      - name: Publish to Github Registry
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          publish: pnpm changes:release:gh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,14 +1,10 @@
 {
   "name": "@macpaw/eslint-config-prettier",
+  "private": false,
   "version": "1.1.0",
   "main": "index.js",
-  "scripts": {
-    "version:patch": "yarn version --patch --no-git-tag-version",
-    "version:minor": "yarn version --minor --no-git-tag-version",
-    "version:major": "yarn version --major --no-git-tag-version"
-  },
   "dependencies": {
-    "@macpaw/eslint-config-base": "3.0.0",
+    "@macpaw/eslint-config-base": "workspace:*",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1"
   },
@@ -28,5 +24,8 @@
     "type": "git",
     "url": "https://github.com/MacPaw/eslint-config.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }

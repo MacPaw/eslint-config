@@ -1,14 +1,16 @@
 {
+  "name": "macpaw-eslint-config",
   "private": "true",
-  "workspaces": [
-    "eslint-config-base",
-    "eslint-config-react",
-    "eslint-config-typescript",
-    "eslint-config-prettier"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MacPaw/eslint-config.git"
+  },
   "scripts": {
-    "patch": "yarn workspaces run version:patch",
-    "minor": "yarn workspaces run version:minor",
-    "major": "yarn workspaces run version:major"
+    "changes:release": "changeset publish",
+    "changes:release:gh": "changeset publish  --no-git-tag",
+    "changes:add": "changeset add"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2"
   }
 }
