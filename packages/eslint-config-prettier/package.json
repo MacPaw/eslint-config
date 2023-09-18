@@ -1,7 +1,7 @@
 {
   "name": "@macpaw/eslint-config-prettier",
   "private": false,
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "index.js",
   "dependencies": {
     "@macpaw/eslint-config-base": "workspace:*",

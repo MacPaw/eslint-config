@@ -37,7 +37,7 @@ jobs:
         with:
           publish: pnpm changes:release
           title: 'ci(changesets): :package: version update for packages'
-          commit: 'ci(changesets):chore(release): version update for packages'
+          commit: 'chore(release): version update for packages'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
