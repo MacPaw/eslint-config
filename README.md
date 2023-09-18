@@ -29,10 +29,20 @@ Extend necessary configs inside `.eslintrc.json`:
 }
 ```
 
-## Deploy
+### Releasing and Publishing
 
-1. Run one of `yarn patch`, `yarn minor`, `yarn major` scripts to bump package.json version for each package
-2. [Create new release](https://github.com/MacPaw/eslint-config/releases/new)
+Steps to make a release:
+- To initiate a release, create a pull request from `master`` to release with the title Release.
+- Ensure all CI checks pass successfully.
+- Once CI checks are green and you have at least one approval, merge the pull request.
+- Post-merge, the release GitHub Actions will trigger and create an "update versions" pull request to the `release` branch.
+- Wait for the CI to turn green on the "update versions" pull request.
+- Once CI is green, merge the "update versions" pull request.
+- After this merge, the actions will trigger again. This time, they'll generate a new tag, create a new release, and publish packages to both GitHub and npm registries.
+
+### Post-Release Activities
+
+After a successful release, ensure you create a backmerge pull request from release to `master`. This ensures that the `master` branch stays up-to-date with the latest versions and changes.
 
 ## Testing in related projects
 There is a way to test new version of eslint-config without publishing it to npm:
