@@ -1,7 +1,7 @@
 {
   "name": "@macpaw/eslint-config-typescript",
   "private": false,
-  "version": "3.1.1",
+  "version": "3.1.2",
   "main": "index.js",
   "dependencies": {
     "@macpaw/eslint-config-base": "workspace:*",

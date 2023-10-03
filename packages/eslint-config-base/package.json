@@ -1,7 +1,7 @@
 {
   "name": "@macpaw/eslint-config-base",
   "private": false,
-  "version": "3.1.1",
+  "version": "3.1.2",
   "main": "index.js",
   "dependencies": {
     "eslint-plugin-import": "^2.26.0"
