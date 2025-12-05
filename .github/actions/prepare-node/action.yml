@@ -2,24 +2,24 @@ name: "Prepare Node"
 description: "Sets up Node.js and runs install if it's needed"
 inputs:
   node-version:
-    description: 'The version of Node.js to use'
+    description: "The version of Node.js to use"
     required: true
   node-cache:
-    description: 'The cache key to use for caching Node.js'
+    description: "The cache key to use for caching Node.js"
     required: false
   package-manager:
-    description: 'The package manager to use'
+    description: "The package manager to use"
     required: false
-    default: 'npm'
+    default: "npm"
   registry-url:
-    description: 'The registry URL to use'
+    description: "The registry URL to use"
     required: false
   scope:
-    description: 'The scope to use'
+    description: "The scope to use"
     required: false
-    default: ''
+    default: ""
   install-dependencies:
-    description: 'Whether to install dependencies'
+    description: "Whether to install dependencies"
     required: false
     default: true
 
@@ -28,13 +28,12 @@ runs:
   steps:
     - name: Install pnpm
       if: ${{ inputs.package-manager == 'pnpm' }}
-      uses: pnpm/action-setup@v2.2.4
+      uses: pnpm/action-setup@v4
       with:
-        version: 8
         run_install: false
 
     - name: Setup Node version
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ inputs.node-version }}
         cache: ${{ inputs.node-cache }}
