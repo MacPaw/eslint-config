@@ -68,6 +68,9 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: false
     if: needs.release.outputs.releaseReady == 'true'
+    permissions:
+      contents: read
+      packages: write
     steps:
       - name: Cancel previous jobs
         uses: styfle/cancel-workflow-action@0.11.0
@@ -89,6 +92,11 @@ jobs:
           registry-url: "https://npm.pkg.github.com/"
           package-manager: "pnpm"
           scope: "@macpaw"
+
+      - name: Authenticate with GitHub Packages
+        run: |
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
+          echo "@macpaw:registry=https://npm.pkg.github.com/" >> ~/.npmrc
 
       - name: Publish to Github Registry
         id: changesets
