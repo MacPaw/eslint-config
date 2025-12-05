@@ -1,5 +1,13 @@
 # @macpaw/eslint-config-typescript
 
+## 3.1.3
+
+### Patch Changes
+
+- b4ff952: Just a patch to check a new publishing
+- Updated dependencies [b4ff952]
+  - @macpaw/eslint-config-base@3.1.3
+
 ## 3.1.2
 
 ### Patch Changes
