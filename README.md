@@ -1,3 +1,5 @@
+![ESLint Config](.github/header.png)
+
 ### [@macpaw/eslint-config-base](eslint-config-base/index.js)
 
 `yarn add --dev @macpaw/eslint-config-base`
